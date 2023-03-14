@@ -5,7 +5,7 @@
  border-color:blue;
 }
 .mat-card#first-card {
- padding: 0;
+ padding: 26px;
 }
 div#profile-background {
     display: flex;
@@ -55,11 +55,6 @@ div#info-data ul#info-details{
   list-style: none;
   flex-shrink: 0;
 }
-div#info-data ul#info-details li a {
-  color: black;
-  display: flex;
-  text-decoration: none;
-}
 div#info-data ul#info-details li a h2 {
   font-size: 1rem;
   font-weight: 500;
@@ -67,8 +62,8 @@ div#info-data ul#info-details li a h2 {
   vertical-align: baseline;
 }
 div#info-data ul#info-details li a img{
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   margin-right: 8px;
 }
 
