@@ -4,84 +4,126 @@
 <meta charset="utf-8">
 <title>Maqueteado-html</title>
 <meta name="description" content="Roughly 155 characters">
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css"></head>
 </head>
 <body>
-
-   <div class="card mat-card" id="first-card"
-      id= "profile-background"><img src="C:\Users\crist\OneDrive\Escritorio\Tareas WebStackJr\modulo II\Maqueteado\Maqueteado-\banner.jpg">
-   <div id="info" style="padding: 16px;"></div>
-     <div id="info-img">
-      <img class="profile-image" src="C:\Users\crist\OneDrive\Escritorio\Tareas WebStackJr\modulo II\Maqueteado\Maqueteado-\jhon.jpg">
-      <div class="btn-edit"> <a href="#" class="btn-right"><i class="fa fa-pen "></i></a></div>
-      <div id="info-data">
-         <div  class="card mat-card" id="first-card">
-         </div  id= "profile-background" img src="C:\Users\crist\OneDrive\Escritorio\Tareas WebStackJr\modulo II\Maqueteado\Maqueteado-\images.png"
-             width="200" height="200"
-              alt="inicio maqueta"> 
-   <div>
+<div class="card mat-card" id="first-card">
+   <div id="profile-background"><img src="C:\Users\crist\OneDrive\Escritorio\Tareas WebStackJr\modulo II\Maqueteado\Maqueteado-\banner.jpg">
+   </div>
+   <div id="info-img">
+   <img src="C:\Users\crist\OneDrive\Escritorio\Tareas WebStackJr\modulo II\Maqueteado\Maqueteado-\jhon.jpg" 
+   alt="Avatar" class="avatar"></div>
+ <div id="info" styles="padding: 16px"></div>
+ <div>
+   <div id="info-data">
+      <div>
     <h1>Cristian Soplan</h1>
     <div id="info-company"> Programador WebStackJr </div>
-    <div id="info-contact"></div>
-    <span> Charata-Chaco(Argentina) </span>
-    <span> <a href="#"> Informacion de contacto </a></span>
-   </div>
+            <div id="info-contact">
+                  <span> Charata-Chaco(Argentina) </span>
+                   <span> <a href="#"> Informacion de contacto </a></span>
+             </div>
+        </div>
+        
+<form name="login" action="index_submit" method="get" accept-charset="utf-8">
+   <ul>
+     <li><label for="usermail">Correo electrónico</label>
+     <input type="email" name="usermail" placeholder="tunombre@correoelectrónico.com" required></li>
+     <li><label for="password">Contraseña</label>
+     <input type="password" name="password" placeholder="contraseña" required></li>
+     <li>
+     <input type="submit" value="Login"></li>
+   </ul>
+ </form>
+ </section>
 </div>
-<ul id="info-details"
-   ><a href="#"  img src="C:\Users\7H0N\Desktop\Portfolio\Maqueteado-\images.png"></a>
-      <h2>Programador WebStackJr</h2>
-   </a></li>
-</ul>
-</div>
-<div class="card mat-card" id="1"> 
-   <div class="card-titles"> 
-      <h2> Acerca de </h2>
-      <div class="btn-edit" onclick="editar_acercade()"> 
-         <a href="#" class="btn-right">
-            <i class="fa fa-pen"></i>
-         </a>
-      </div>   
-   </div>
-   <div>
-      <p id="text-acercade">Estudiante de ArgentinaPrograma 4.0</p>
-   </div>
-   <div>
- <input id="edit-acercade"  type="text" oninput="escribir_acercade(this.value)" style="display:none">
-   </div> 
-   <div class="card mat-card">
-      <div id="Nombre"></div>
-   </div>
-   <div class="card mat-card">
-      <div id="Apellido"></div>
-   </div>
-   <div class="card mat-card">
-      <div id="Titulos"></div>
+
+<div id="info-actions">
+   <button type="button" class="btn btn-primary"> Tengo interes en </button>
+   <button type="button" class="btn btn-light"> Añadir seccion </button>
+   <button type="button" class="btn btn-light"> Mas</button>
    </div>
 
-<input type="file" id=file1 onchange="showFile(this)">
+<div class="card mat-card">
+<div class="card-titles"> 
+   <h2> Experiencia </h2>        
+    </div>
+<div class="contenedor-imagenes">
+   <img src="C:\Users\crist\OneDrive\Escritorio\Tareas WebStackJr\modulo II\Maqueteado\Maqueteado-\imG.a.png">
+   <img src="C:\Users\crist\OneDrive\Escritorio\Tareas WebStackJr\modulo II\Maqueteado\Maqueteado-\logos.png"
+   width="300" height="300">
+   <img src="C:\Users\crist\OneDrive\Escritorio\Tareas WebStackJr\modulo II\Maqueteado\Maqueteado-\spring.jpg"
+   width="300" height="300">
+ </div>
+</div>
+</div>
 
 <script>
-   function foo(){
-     var undefined = 2; // bad idea!
-      console.log(undefined*2);
-      var newDiv=document.createElement("div");
-      var newContent = document.createTextNode("Hola!¿Que tal?");
-      newDiv.appendChild(newContent); // añade texto al div creado.
-      //añade el elemento creado y su contenido al DOM
-      var currentDiv = document.getElementById("1");
-      documen.body.insertBefore(newDiv, currentDiv);
-  }
-  foo();
-  
-  </script>
+        //funcion que
+        // cambia el estilo de input a visible
+        // toma el valor del texto del parrafo con id "tex-acercade"
+        // lo muestra en consola
+        function cambiar_parrafo(){
+         document.getElementById("edit-acercade").style.display="block";
+         let text= document.getElementById("text-acercade").innerText;
+          console.log(texto); 
+         };
+function myfunction2(valor){
+document.getElementById("text-acercade").innerText=valor;
+}
 
-   <div id="info-actions">
-   <button class="btn btn-primary" type="button"> Tengo interes en </button>
-   <button class="btn btn-light" type="button"> Añadir seccion </button>
-   <button class="btn btn-light" type="button"> Mas </button>
-</div>
 
-</body>
+ //controla si se presiono un enter
+let textarea=document.getElementById("edit-acercade")
+textarea.addEventListener( 'keyup ', (e)=>{
+logMessage('key "${e.key}" released [event: keyup]');
+if(e.keyup=="Enter"){
+   document.getElementById("edit-acercade").style.display="none"
+}
+});
+   // carga el contenido de un archivo de texto
+   // y o muestra en el parrafo
+    function showFile(input){
+      let file=input.files[0];
+      alert(`File name: ${file.name}`); // eg my.png
+      alert(`Last modified: ${file.lastModified}`); // eg 12314345313221312
+
+      let reader = new FileReader();
+      reader.readAsText(file);
+      reader.onload = function() {
+         console.log(reader.result);
+         document.getElementById("text-acercade").innerText=reader.result;
+};
+reader.onerror = function(){
+   console.log(reader.error);
+};
+
+    }
+/**/
+
+
+
+</script>
+<div class="card mat-card">
+   <div class="card-titles"> 
+      <h2> Acerca de</h2>
+      <div class="btn-edit" onclick="cambiar_parrafo()">
+      <a href="#" class="btn-right">
+         <i class="fa fa-pen"></i>
+      </a>
+      
+      </div>
+   </div>
+   <div>
+      <p id="text-acercade"> Estudiante de programacion en Argentina Programa 4.0 </p>
+   </div>
+   <div>
+      <input id="edit-acercade" type="text" oninput="myfunction2(this.value)" style="display:none">
+   </div>
+ </div>
+   </body>
 </html>
