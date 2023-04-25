@@ -10,8 +10,10 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 <link rel="stylesheet" href="styles.css"></head>
 </head>
+
 <body>
-<div class="card mat-card" id="first-card">
+
+   <div class="card mat-card" id="first-card">
    <div id="profile-background"><img src="C:\Users\crist\OneDrive\Escritorio\Tareas WebStackJr\modulo II\Maqueteado\Maqueteado-\banner.jpg">
    </div>
    <div id="info-img">
@@ -63,25 +65,49 @@
 </div>
 
 
- <div class="card mat-card">
+ <div class="card mat-card" id="1">
    <div class="card-titles"> 
       <h2> Acerca de</h2>
-      <div class="btn-edit" onclick="cambiar_parrafo()">
-      <a href="#" class="btn-right">
+      <div class="btn-edit" onclick="editar_acercade()"><a href="#" class="btn-right">
          <i class="fa fa-pen"></i>
       </a>
-      
       </div>
    </div>
    <div>
       <p id="text-acercade"> Estudiante de programacion en Argentina Programa 4.0 </p>
    </div>
    <div>
-      <input id="edit-acercade" type="text" oninput="myfunction2(this.value)" style="display:none">
+      <input id="edit-acercade" type="text" oninput="escribir_acercade(this.value)" style="display:none">
    </div>
     </div>
 
- <input type="file" id="file1" onchange="showFile(this)"> 
+    <div class="card mat-card"><div id="Nombre"></div></div>
+
+    <div class="card mat-card"><div id="Apellido"></div></div>
+      
+    <div class="card mat-card"><div id="Titulos"></div></div>
+      
+    <input type="file" id="file1" onchange="showFile(this)"> 
+
+
+ <script src="codigo.js"></script>
+ <script src="ecma_brw.js"></script>
+ <script src="objetos.js" ></script>
+ <script>
+   function foo(){
+      var undefined = 2; //bad idea!
+      console.log(undefined*2);
+      var newDiv = document.createElement("div");
+      var newContent = document.createTextNode("Hola! ¿Què tal?");
+      newDiv.appendChild(newContent); //añade texto al div creado.
+      //añade el elemento creado y su contenido al DOM
+      var currentDiv =document.getElementById("1")
+      document.body.insertBefore(newDiv, currentDiv);
+
+   }
+      foo();
+
+ </script>
 
 <script>
    //funcion que

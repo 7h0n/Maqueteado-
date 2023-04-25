@@ -1,12 +1,12 @@
 interface Persona{
-    Nombre:string;
+    Nombre: string;
     Apellido:string;
     Acercade:string;
     Titulos: [string,string];
 }
 
 let pofolio:Persona={
-    Nombre="",
+    Nombre:"",
     Apellido:"",
     Acercade:"",
     Titulos: ["",""],
@@ -15,13 +15,13 @@ function GetNombre(nombre:string):void{
     const nombre1 = document.getElementById("Nombre");
     nombre1.textContent=nombre;
 }
-function GetApellido(apellido:string):void{
+function GetApellido(apellido:string):string{
     const a = document.getElementById("Apellido");
     a.textContent=apellido;
     return pofolio.Apellido=apellido;
 }
-function GetAcercade(Acercade:string):void{
-    const a = document.getElementById("acercade");
+function GetAcercade(Acercade:string):string{
+    const a = document.getElementById("text-acercade");
     a.textContent=acercade;
     return pofolio.Acercade=acercade;
 }
@@ -35,8 +35,8 @@ function showFile(input):void{
     // alert(" File name: ${File.name}"); // e.g my.png
     // alert(" Last modified: ${file.lastmodified} "); // e.g. 349786983
 
-let reader = new File.Reader();
-reader.readAsText(File);
+let reader = new FileReader();
+reader.readAsText(file);
 reader.onload =function ( progressEvent){
     var s=reader.result.toString();
     console.log(s);
@@ -46,5 +46,8 @@ reader.onload =function ( progressEvent){
     GetApellido(arr[2]);
     GetTitulos(arr[3] , arr[4]);
 };
+//reader on.error =function(){
+// console.log(reader..error);    
+// };
 
 }
