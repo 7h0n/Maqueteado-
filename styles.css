@@ -14,21 +14,15 @@ border-color:blue;
 .mat-card#first-card {
 padding: 10;
 }
-div#profile-background {
-  border-radius: 32px;
-  margin: 1px 1px ;
-  padding:1px;
-  display: flex;
-z-index: 1;
-}
+
 div#profile-background img {
   width: 100%;
-  border-radius: 12PX 12px 0 0; 
+  border-radius: 16PX 16px 0 0; 
 }
 .profile-image {
 border-radius: 150%;
-width: 400px;
-height: 400px;
+width: 200px;
+height: 200px;
 margin-top: -110px;
 z-index: 11;
 }
