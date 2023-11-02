@@ -32,6 +32,7 @@ display: flex;
 div#info-actions button {
 margin-right: 8px;
 }
+
 div#info-contact span a {
 color: blue;
 touch-action: manipulation;
@@ -76,7 +77,8 @@ body {
      background-color: lightblue;
   
 }
-
+.fa-pull-left {
+  float: left; }
 .table {
   --bs-table-color: var(--bs-gray-600);
   --bs-table-bg: var(--bs-gray-100);
